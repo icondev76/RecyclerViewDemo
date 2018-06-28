@@ -1,3 +1,5 @@
+package com.icontech.recyclerviewdemo;
+
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
@@ -10,12 +12,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.icontech.recyclerviewdemo.R;
 
 import java.util.ArrayList;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
-    private static final String TAG = "RecyclerViewAdapter";
+    private static final String TAG = "com.icontech.recyclerviewdemo.RecyclerViewAdapter";
 
     private Context context;
     private ArrayList<String> mimagename= new ArrayList<>();
@@ -54,7 +55,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public int getItemCount() {
-        return 0;
+        return mimagename.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
